@@ -1,0 +1,232 @@
+
+* {
+    box-sizing: border-box;
+	font-family: Lucida Sans Unicode;
+}
+
+body {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+*:focus {
+	outline: none;
+}
+
+.ImageWrapper {
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	z-index: -2;
+	display: flex;
+}
+
+.ImageWrapper img {
+	position: relative
+	height: 100%;
+	width: 100%;
+}
+
+.ToDoList {
+	display: flex;
+	flex-flow: column nowrap;
+	background: rgba(0, 0, 0, .7);
+	box-shadow: 0px 0px 10px black;
+	width: 35%;
+	border-radius: 10px;
+	margin: 0;
+}
+
+#TDInput {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .7);
+    opacity: .6;
+    text-align: center;
+	border-radius: 10px;
+}
+
+#TDItems {
+	list-style-type: none;
+}
+
+#TDItems .TDItem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0);
+    color: rgba(255,255,255, 0.8);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	border-radius: 10px;
+}
+
+#TDItems .TDItem:hover {
+    background: rgba(255,255,255, 0.8);
+	color: rgba(0, 0, 0, .7);;
+}
+
+#TDItems .TDItem .ItemText{
+	margin: 0 auto 0 10px;
+	padding-left: 10px;
+	width: 80%;
+	border-left: 2px solid red;
+}
+
+#TDItems .Checked .ItemText{
+	text-decoration: line-through;
+	color: rgba(255,255,255, 0.4);
+	border-left: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+#TDItems .TDItem .CloseButton {
+	width: 15%;
+	text-align: center;
+	font-size: 24px;
+	opacity: 0;
+	color: red;
+}
+
+#TDItems .TDItem .CloseButton:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#TDItems .Checked .CloseButton:hover {
+	opacity: 0.5;
+}
+
+#ButtonsWrapper {
+	background: rgba(0, 0, 0, .7);
+	box-shadow: 0px 0px 10px black;
+	width: 5%;
+	height: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: nowrap column;
+}
+
+#ButtonsWrapper img {
+	width: 100%;
+	opacity:0.7;
+	margin-bottom: 5px;
+}
+
+#ButtonsWrapper img:hover{
+	opacity: 1;
+	cursor: pointer;
+} 
+
+#ButtonsWrapper .ContentButton#close {
+	padding-bottom: 2px;
+	border-bottom: 2px solid rgba(255,0,0, 0.5);
+}
+
+ #ButtonsWrapper .ContentButton#spotify {
+ 	padding-bottom: 4px;
+	border-bottom: 2px solid rgba(255,0,0, 0.5);
+ }
+  #ButtonsWrapper .LinkButton#gmail {
+ 	padding-top: 4px;
+	border-top: 2px solid rgba(255,0,0, 0.5);
+ }
+
+#ContentWrapper {
+	position: relative;
+	background: rgba(0, 0, 0, .7);
+	opacity: 0;
+	box-shadow: 0px 0px 10px black;
+	width: 45%;
+	height: 100%;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+
+#ContentWrapper img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#ContentWrapper .SpotifyWrapper{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#ContentWrapper .PlaylistWrapper{
+	position: relative;
+	width: 33%;
+	margin-right: 0;
+	display: flex;
+	align-items: center;
+	opacity: 0.7;
+}
+
+#ContentWrapper .PlaylistWrapper:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+#ContentWrapper .PlaylistWrapper .PlaylistCover{
+	position: relative;
+	height: 100%;
+}
+#ContentWrapper .PlaylistWrapper .PlaylistTitle{
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align:center;
+	font-size: 100%;
+	margin: 5px;
+
+}
+
+#ContentWrapper iframe {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#ContentWrapper h1{ 
+	color: white;
+	text-align: center;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	margin-top: 0px;
+}
+
+#ContentWrapper p{
+	color: white;
+	font-size: 8px;
+}
+
+#ContentWrapper .loader {
+	position: relative;
+
+	opacity: 0.8;
+    border: 16px solid rgba(0, 0, 0, 0); /* invisible */
+    border-top: 16px solid rgba(255,255,255, 0.8); /* light grey */
+    border-bottom: 16px solid rgba(255,0,0, 0.5);; /* light grey */
+    border-radius: 50%;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
