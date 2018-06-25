@@ -1,4 +1,3 @@
-  // localStorage.setItem("todoData", JSON.stringify([]));
 
 function addObject(input) {
   var data = JSON.parse(localStorage.getItem("todoData"));
@@ -138,7 +137,6 @@ function initializeToDoList() {
     item.append(closeButton);
   }
 }
-
 
 $( document ).ready(function() {
   initializeToDoList()
