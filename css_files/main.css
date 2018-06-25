@@ -1,17 +1,18 @@
+[v-cloak] { display: none; }
 
 * {
     box-sizing: border-box;
 	font-family: Lucida Sans Unicode;
 }
 
+*:focus {
+	outline: none;
+}
+
 body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-}
-
-*:focus {
-	outline: none;
 }
 
 .ImageWrapper {
@@ -82,7 +83,7 @@ body {
 	border-left: 2px solid red;
 }
 
-#TDItems .Checked .ItemText{
+#TDItems .Checked{
 	text-decoration: line-through;
 	color: rgba(255,255,255, 0.4);
 	border-left: 2px solid rgba(255, 0, 0, 0.5);

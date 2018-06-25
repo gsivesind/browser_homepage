@@ -35,12 +35,12 @@ function display_spotify (callback) {
 	$('#ContentWrapper').append('<div class="SpotifyWrapper"></div>')
 
 	var playlistCovers = {
-		'JAMMERS': $("<img src=SpotifyCovers\\Jammers.jpg class=PlaylistCover id=JAMMERS></img>"),
-		'DISCOVER WEEKLY': $("<img src=SpotifyCovers\\Discover.jpg class=PlaylistCover id=DISCOVER_WEEKLY></img>"),
-		'BOY\'S NIGHT': $("<img src=SpotifyCovers\\BoysNight.jpg class=PlaylistCover id='BOY\'S NIGHT'></img>"),
-		'AFTERNOON ACOUSTIC': $("<img src=SpotifyCovers\\AfternoonAcoustic.jpg class=PlaylistCover id='AFTERNOON ACOUSTIC'></img>"),
-		'EVENING CHILL': $("<img src=SpotifyCovers\\EveningChill.jpg class=PlaylistCover id='EVENING CHILL'></img>"),
-		'MORNING VIBES': $("<img src=SpotifyCovers\\MorningVibes.jpg class=PlaylistCover id='MORNING VIBES'></img>")
+		'JAMMERS': $("<img src=../images/SpotifyCovers/Jammers.jpg class=PlaylistCover id=JAMMERS></img>"),
+		'DISCOVER WEEKLY': $("<img src=../images/SpotifyCovers/Discover.jpg class=PlaylistCover id=DISCOVER_WEEKLY></img>"),
+		'BOY\'S NIGHT': $("<img src=../images/SpotifyCovers/BoysNight.jpg class=PlaylistCover id='BOY\'S NIGHT'></img>"),
+		'AFTERNOON ACOUSTIC': $("<img src=../images/SpotifyCovers/AfternoonAcoustic.jpg class=PlaylistCover id='AFTERNOON ACOUSTIC'></img>"),
+		'EVENING CHILL': $("<img src=../images/SpotifyCovers/EveningChill.jpg class=PlaylistCover id='EVENING CHILL'></img>"),
+		'MORNING VIBES': $("<img src=../images/SpotifyCovers/MorningVibes.jpg class=PlaylistCover id='MORNING VIBES'></img>")
 	}
 	
 	var urls = {
