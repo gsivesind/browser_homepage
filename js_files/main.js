@@ -20,7 +20,6 @@ var app = new Vue ({
     }
     localStorage.setItem("todoData", JSON.stringify(todos));
     addContentButtonListeners();
-    addLinkButtonListeners();
   },
   data: {
     todos: JSON.parse(localStorage.getItem("todoData")),
