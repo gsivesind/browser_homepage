@@ -64,6 +64,7 @@ function display_spotify (callback) {
 			var choice = this.id
 			var url = urls[choice]
 			var widget = $('<iframe>', {'src': url,
+							'allow':'encrypted-media',
 							'frameborder':'0',
 							'allowtransparency':"true",
 							'height':'300'})
