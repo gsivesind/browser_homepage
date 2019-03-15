@@ -75,15 +75,6 @@ function display_spotify (callback) {
 
 }
 
-function display_calendar (callback){
-	var dummyVal = Math.random();
-	dummyVal = String(dummyVal);
-	var widget = $('<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=gsivesin%40stanford.edu&amp;color=%2329527A&amp;src=%23contacts%40group.v.calendar.google.com&amp;color=%2328754E&amp;src=stanford.edu_njippr6d9tj3gt86vg8il6hs3s%40group.calendar.google.com&amp;color=%23691426&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;src=stanford.edu_1ouhajhmmjjc3t3sdle40aq5ps%40group.calendar.google.com&amp;color=%23125A12&amp;src=stanford.edu_5f48obvpd2lcoisjvupcs9g47c%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America/Los_Angeles" ></iframe>');
-	widget.height(500)
-	$('#ContentWrapper').empty()
-	$('#ContentWrapper').append(widget)
-	callback()
-}
 
 function display_loading (callback) {
 	var dummyVal = Math.random();
@@ -112,7 +103,6 @@ function displayContent (id) {
 		display_loading(callback)
 		if(id === 'xkcd') display_xkcd(callback);
 		if(id === 'spotify') display_spotify(callback);
-		if(id === 'calendar') display_calendar(callback);
 	}
 
 }
