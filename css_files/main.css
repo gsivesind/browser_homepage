@@ -135,12 +135,8 @@ body {
 
  #ButtonsWrapper .ContentButton#spotify {
  	padding-bottom: 4px;
-	border-bottom: 2px solid rgba(255,0,0, 0.5);
  }
-  #ButtonsWrapper .LinkButton#gmail {
- 	padding-top: 4px;
-	border-top: 2px solid rgba(255,0,0, 0.5);
- }
+ 
 
 #ContentWrapper {
 	position: relative;
