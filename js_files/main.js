@@ -28,7 +28,8 @@ var app = new Vue ({
   },
   methods: {
     addTodo: function() {
-      var input = this.todoInput;
+      var input = this.todoInput.trim();
+      if (input == "") return
       console.log(this.todoInput)
       console.log(this.todos)
       var todos = this.todos;
