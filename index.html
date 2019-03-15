@@ -13,6 +13,7 @@
 	</head>
 
 	<body>
+		<div class=main-content>
 			<div class="ToDoList" id="app">
 				<div id="TDItems">
 					<div class=TDItem v-for="(todo, index) in todos" >
@@ -33,8 +34,11 @@
 				<img src="images/Thumbnails/xkcd.png" class='ContentButton' id='xkcd'>
 				<img src="images/Thumbnails/spotify.png" class='ContentButton' id='spotify'>
 			</div>
+		</div>
 
-
+	<p class='attribution'>
+		<a href="https://unsplash.com">image from unsplash</a>
+	</p>
 	</body>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>

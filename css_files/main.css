@@ -9,7 +9,8 @@
 	outline: none;
 }
 
-body {
+
+.main-content{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -222,6 +223,22 @@ body {
     height: 300px;
     animation: spin 2s linear infinite;
 }
+
+.attribution a{
+    font-size: 0.5em;
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+.attribution a:hover{
+    opacity: 1;
+}
+
+ }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
