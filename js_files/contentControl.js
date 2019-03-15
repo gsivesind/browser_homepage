@@ -15,7 +15,7 @@ function display_xkcd (callback) {
 	  		var tempImg = new Image()
 	  		tempImg.onload = function () {
 	  			$('#ContentWrapper').empty()
-				$('#ContentWrapper').append($("<h1>"+title+"</h1>"));
+				// $('#ContentWrapper').append($("<h1>"+title+"</h1>"));
 				$('#ContentWrapper').append($(this));
 				$('#ContentWrapper').append($("<p>"+alt+"</p>"))
 

@@ -30,6 +30,8 @@ var app = new Vue ({
   methods: {
     addTodo: function() {
       var input = this.todoInput;
+      console.log(this.todoInput)
+      console.log(this.todos)
       var todos = this.todos;
       this.todoInput = "";
       var newTodo = {
@@ -37,6 +39,7 @@ var app = new Vue ({
         text: input, 
         doneTime: null
       };
+      if(!todos) todos = []
       todos.push(newTodo);
       localStorage.setItem("todoData", JSON.stringify(todos));
     },

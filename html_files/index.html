@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>To do list v1.0</title>
+		<title>Home</title>
+		<link rel="icon" href="../images/home.png">
 		<link rel="stylesheet" href="../css_files/main.css" type="text/css">
 
 
@@ -15,7 +16,7 @@
 			<div class="ToDoList" id="app">
 				<div id="TDItems">
 					<div class=TDItem v-for="(todo, index) in todos" >
-						<!-- The first on eshows if the item has not been completed, otherwise the second does -->
+						<!-- The first one shows if the item has not been completed, otherwise the second does -->
 						<p v-cloak v-if="todo.doneTime === null" class="ItemText" @click="toggleDone(index)">{{todo.text}}</p> 
 						<p v-cloak v-else class="ItemText Checked" @click="toggleDone(index)">{{todo.text}}</p>
 						<div class="CloseButton" @click="removeTodo(todo)">X</div>
